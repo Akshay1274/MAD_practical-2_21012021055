@@ -22,4 +22,25 @@ class MainActivity : AppCompatActivity() {
       super.onStart()
      showMassage("on start method is called")
     }
+     fun onCreate(){
+        showMassage("on create method is called")
+    }
+  override  fun onResume(){
+        super.onResume()
+      showMassage("on Resume method called")
+    }
+  override  fun onPause(){
+        super.onPause()
+      showMassage("on Pause method called")
+    }
+     override fun onStop(){
+        super.onStop()
+        showMassage("on stop method called")
+    }
+  override  fun onDestroy(){
+        super.onDestroy()
+      showMassage("on Destroy method called")
+    }
+
+
 }
