@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun showMassage(message:String){
-        Log.i(TAG, "message")
+        Log.i(TAG, message)
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
         val obj:ConstraintLayout?=findViewById(R.id.mainconstraint)
         if(obj!=null){
